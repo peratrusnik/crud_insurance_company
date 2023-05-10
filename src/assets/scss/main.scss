@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 900px !important;
+}
+.header{
+    background-color: #000050;
+    opacity: 0.9;
+    color: #f3f3f3; 
+    padding: 10px 0;
+    & h1{
+        margin: 0;
+        font-weight: 200;
+        display: inline-block;
+        color: #f3f3f3;
+        font-family: monospace;
+    }
+}
+.body{
+    padding: 30px 0;
+    background-color: #f8f8f8;
+    height: 90vh;
+}
+.mainTableWrapper{
+    min-height: 460px;
+    background-color: #fff;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+    border: 1px solid #eee;
+    .createSearchWrapper{
+        display: flex;
+        justify-content: space-between;
+            .btnCreate{
+                display: inline-block;
+            }
+            .searchPanel{
+                .searchItem{
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    text-align: left;
+                    
+            }
+            .searchBtn{
+                height: 37px;
+                padding: 4px;
+                margin: 0 0 0 5px;
+                border-radius: 5px;
+                background-color: #198754;
+                border: none;
+                &:hover{
+                  background-color: #146c43;                   
+                }
+                & svg{                    
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+            
+        }
+        
+    }
+    .tableWrapper{
+        min-height: 295px !important;
+    }
+}
+
+
+thead{
+    background-color: rgb(162, 162, 162);
+    color: white;
+    letter-spacing: 1px;    
+}
+.footer {
+    color: #f3f3f3;
+    background-color: #000050;
+    opacity: 0.9;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.progressbar{
+    border: 1px solid #999;
+    width: 100%;
+    height: 12px;
+    & div{
+        width: 25%;
+        height: 10px;
+        background-color: #198754;
+    }
+}
+
+.has-error{
+    border: 2px solid tomato;
+}
+#continue{
+    width: 250px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #146c43;
+    margin-top: 10px;
+    background-color: #198754;
+    color: #fff;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: #146c43;
+
+    }
+}
+#continue[disabled]{
+    cursor: not-allowed;
+    background-color: rgb(205, 221, 202);
+}
+input:focus-visible{
+    outline: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.info{
+    text-align-last: left;
+    display: flex;
+    & ul{
+        width: 300px;
+        list-style: none;
+        text-align: left;
+    }
+    & svg{
+        fill: rgb(228, 206, 46)
+    }
+}
+.query{
+    color: tomato;
+    font-weight: bold;
+}
+
+.formErrors p{
+    margin: 3px 0; 
+    color: tomato;   
+}
+.form-wrapper input[name='estimated'], .form-wrapper input[name='coverage'] { 
+    padding-right: 25px;
+}
+.form-wrapper select{
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 5px 0 5px 40px;
+}
+.form-wrapper input {
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 5px;
+    text-align: right;
+}
+.symbol{
+    position: absolute;
+    margin-left: -20px;
+    font-style: italic;
+    line-height: 37px;
+    color: green;
+}
+.page-link{
+    color: black !important;
+    & svg{
+        font-size: 11px;
+    }
+}
+
+.active>.page-link, .page-link.active{
+    background-color: #000050 !important;
+    color: #fff !important;
+    opacity: 0.8;
+}
+.btnView{
+    padding: 6px 12px;
+    line-height: 30px;
+    &:hover svg{
+        color: purple;
+    }
+    & svg{
+        color: rgb(80, 80, 80);
+        font-size: 22px;
+    }
+}
+
+.btnDelete{
+    padding: 6px 12px;
+    color: rgb(80, 80, 80);
+    &:hover svg{
+        color: purple;
+    }
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(255, 255, 255);
+    padding: 40px;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+    .list{
+        list-style: none;
+        & li{
+            color: rgb(0, 0, 80);
+            opacity: 0.9;
+            border-bottom: 1px solid #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+    & h4{
+        color: #000050;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+}
+
+
+.progressInfoBar{
+    .itemsData{
+    width: 200px;
+    min-height: 125px;
+    list-style: none;
+    padding: 0 5px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    .infoBarTitle{
+        color: indigo;
+        font-weight: bold;
+        margin-top: -15px;
+    }
+    }
+    & hr{
+        margin: 3px 25px;
+    }
+}
+
+.customS{
+    padding: 20px;
+}
+.arrow{
+    margin-top: -60px;
+    font-size: 40px;
+    color: indigo;   
+}
+
+.progressLineTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #000050;
+}
+
+.formHolder{
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: rgba(50,50,93,0.25) 0px 2px 5px -1px, rgba(0,0,0,0.3) 0px 1px 3px -1px;
+}
+
+.list label{
+    opacity: 0.6;
+    margin-bottom: 3px;
+}
+.btn{
+    letter-spacing: 4px;
+}
+.laza{
+    color: tomato;
+}
+@media (max-width: 768px){
+   .btn-success{
+    width: 55%;
+    font-size: 14px;
+   }
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}

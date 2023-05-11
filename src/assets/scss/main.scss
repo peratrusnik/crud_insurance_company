@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.app{
     font-family: 'Times New Roman', Times, serif;
 }
 .container{
@@ -174,8 +176,8 @@ input:focus-visible{
     opacity: 0.8;
 }
 .btnView{
-    padding: 6px 12px;
-    line-height: 30px;
+    padding-right: 9px;
+    border-right: 1px solid black;
     &:hover svg{
         color: purple;
     }
@@ -186,7 +188,7 @@ input:focus-visible{
 }
 
 .btnDelete{
-    padding: 6px 12px;
+    padding-left: 10px;
     color: rgb(80, 80, 80);
     &:hover svg{
         color: purple;
@@ -215,17 +217,16 @@ input:focus-visible{
     }
 }
 
-
 .progressInfoBar{
     .itemsData{
     width: 200px;
-    min-height: 125px;
+    min-height: 100px;
     list-style: none;
     padding: 0 5px;
     background-color: #f3f3f3;
     border-radius: 20px;
     margin-top: 30px;
-    font-size: 15px;
+    font-size: 13px;
     border: 1px solid #ddd;
     .infoBarTitle{
         color: indigo;
@@ -272,9 +273,28 @@ input:focus-visible{
 }
 @media (max-width: 768px){
    .btn-success{
-    width: 55%;
+    width: 40%;
     font-size: 14px;
+    letter-spacing: normal;
    }
+    
+}
+@media (max-width: 768px){
+    .btnView{
+        padding-right: 5px;
+     
+        border-right: none;
+        border-right: 1px solid black;
+      
+    }
+    
+    .btnDelete{
+        padding-left: 5px;
+        color: rgb(80, 80, 80);
+        &:hover svg{
+            color: purple;
+        }
+    }
     
 }
 

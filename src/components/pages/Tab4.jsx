@@ -152,7 +152,7 @@ const errorClass = (error) => {
             }}
             />
         <input                
-            type="number"
+            type="tel"
             className={` ${errorClass(formState.formErrors.agentPhone)}`}
             placeholder='Phone number'
             name='aPhone'

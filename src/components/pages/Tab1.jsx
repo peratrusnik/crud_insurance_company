@@ -114,7 +114,7 @@ export function Tab1({ formData, setFormData, handleSubmit }) {
                     }}
                 />
                 <input                
-                    type="number"
+                    type="tel"
                     className={` ${errorClass(formState.formErrors.phone)}`}
                     placeholder='Phone number'
                     name='phone'

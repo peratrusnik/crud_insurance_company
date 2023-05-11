@@ -35,7 +35,7 @@ function Records ({ data, query }) {
                         <td>{user.insuranceType.toUpperCase()}</td>
                         <td>{user.coverageAmount} {symbol}</td>
                         <td>
-                        <Link className='btnView' title='View' to={`/view/${user.id}`}><CiRead/></Link><span>|</span>
+                        <Link className='btnView' title='View' to={`/view/${user.id}`}><CiRead/></Link>
                        <span title='Remove' onClick={() => {if (window.confirm(`\nAre you sure you want to remove this record ?\n\n Requester: \t ${user.insurerFirstName } ${user.insurerLastName } \n Type of insurance: \t ${user.insuranceType.toUpperCase()} \n Price: \t ${user.coverageAmount} € \n Created at: \t ${user.date}`)) dispatch(deletePolicy({ id: user.id }))
                        }}
                        className='btnDelete'
